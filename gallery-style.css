@@ -1,0 +1,12 @@
+.col-2 {
+  background-color: yellow; }
+
+img {
+  width: 400px; }
+
+img:active {
+  width: 70%;
+  height: 70%;
+  padding: 20px; }
+
+/*# sourceMappingURL=gallery-style.css.map */

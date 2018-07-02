@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Principle of operation</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-2" >
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="main.html">Main page</a> </li>
+                    <li><a href="principle_of_operation.html">Principle of operation</a></li>
+                    <li><a href="practical_issues.html">Practical issues</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <div class="alert alert-info">All the text and images are taken from <a href="https://wikipedia.org/wiki/Optical_fiber">Wikipedia</a></div>
+                <h1>Principle of operation</h1>
+                <p>
+                    An optical fiber is a cylindrical dielectric waveguide (nonconducting waveguide) that transmits light along its axis, by the process of total internal reflection. The fiber consists of a core surrounded by a cladding layer, both of which are made of dielectric materials. To confine the optical signal in the core, the refractive index of the core must be greater than that of the cladding. The boundary between the core and cladding may either be abrupt, in step-index fiber, or gradual, in graded-index fiber.
+                </p>
+                <h2>Index of refraction</h2>
+                <p>
+                The index of refraction (or refractive index) is a way of measuring the speed of light in a material. Light travels fastest in a vacuum, such as in outer space. The speed of light in a vacuum is about 300,000 kilometers (186,000 miles) per second. The refractive index of a medium is calculated by dividing the speed of light in a vacuum by the speed of light in that medium. The refractive index of a vacuum is therefore 1, by definition. A typical singlemode fiber used for telecommunications has a cladding made of pure silica, with an index of 1.444 at 1500 nm, and a core of doped silica with an index around 1.4475. The larger the index of refraction, the slower light travels in that medium. From this information, a simple rule of thumb is that a signal using optical fiber for communication will travel at around 200,000 kilometers per second. To put it another way, the signal will take 5 milliseconds to travel 1,000 kilometers in fiber. Thus a phone call carried by fiber between Sydney and New York, a 16,000-kilometer distance, means that there is a minimum delay of 80 milliseconds between when one caller speaks and the other hears. (The fiber in this case will probably travel a longer route, and there will be additional delays due to communication equipment switching and the process of encoding and decoding the voice onto the fiber).
+            </p>
+
+
+            <h2>Total internal reflection</h2>
+            <img src="reflection1.png" id="unnecessary_img">
+            <img src="reflection2.jpg" class="scalable_img">
+            <p>
+                When light traveling in an optically dense medium hits a boundary at a steep angle (larger than the critical angle for the boundary), the light is completely reflected. This is called total internal reflection. This effect is used in optical fibers to confine light in the core. Light travels through the fiber core, bouncing back and forth off the boundary between the core and cladding. Because the light must strike the boundary with an angle greater than the critical angle, only light that enters the fiber within a certain range of angles can travel down the fiber without leaking out. This range of angles is called the acceptance cone of the fiber. The size of this acceptance cone is a function of the refractive index difference between the fiber's core and cladding.
+            </p>
+            <p>
+                In simpler terms, there is a maximum angle from the fiber axis at which light may enter the fiber so that it will propagate, or travel, in the core of the fiber. The sine of this maximum angle is the numerical aperture (NA) of the fiber. Fiber with a larger NA requires less precision to splice and work with than fiber with a smaller NA. Single-mode fiber has a small NA.
+            </p>
+
+            <h2>Single-mode fiber</h2>
+            <p>
+                Fiber with a core diameter less than about ten times the wavelength of the propagating light cannot be modeled using geometric optics. Instead, it must be analyzed as an electromagnetic structure, by solution of Maxwell's equations as reduced to the electromagnetic wave equation. The electromagnetic analysis may also be required to understand behaviors such as speckle that occur when coherent light propagates in multi-mode fiber. As an optical waveguide, the fiber supports one or more confined transverse modes by which light can propagate along the fiber. Fiber supporting only one mode is called single-mode or mono-mode fiber. The behavior of larger-core multi-mode fiber can also be modeled using the wave equation, which shows that such fiber supports more than one mode of propagation (hence the name). The results of such modeling of multi-mode fiber approximately agree with the predictions of geometric optics, if the fiber core is large enough to support more than a few modes.
+            </p>
+            <p>
+                The waveguide analysis shows that the light energy in the fiber is not completely confined in the core. Instead, especially in single-mode fibers, a significant fraction of the energy in the bound mode travels in the cladding as an evanescent wave.
+            </p>
+            <h4>The structure of a typical single-mode fiber:</h4>
+            <br>
+            <img src="single_mode.png" class="scalable_img">
+            <table>
+                <tr>
+                    <th>&#8470;</th>
+                    <th>Name</th>
+                    <th>Diameter</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Core</td>
+                    <td>8 &#956;m</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Clading</td>
+                    <td>125 &#956;m</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Buffer</td>
+                    <td>250 &#956;m</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Jacket</td>
+                    <td>400 &#956;m</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+</html>

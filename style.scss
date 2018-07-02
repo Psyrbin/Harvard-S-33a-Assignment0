@@ -1,0 +1,43 @@
+$navigation_link_color: red;
+
+%link {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.col-2 {
+    background-color: yellow;
+}
+
+li {
+    a {
+        @extend %link;
+        color: $navigation_link_color;
+        font-weight: normal;
+    } 
+}
+
+a {
+    @extend %link;
+    font-weight: bold;
+}
+
+.scalable_img {
+        width : 40%;
+        padding-bottom: 20px;
+}
+
+td {
+    padding-left: 8px;
+    padding-right: 7px;        
+}
+
+td, th {
+    border: 1px solid;
+}
+
+@media (max-width: 650px) {
+    #unnecessary_img {
+        display: none;
+    }
+}
